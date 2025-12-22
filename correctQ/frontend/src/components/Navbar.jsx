@@ -3,15 +3,15 @@ export default function Navbar() {
     <>
       <div className="navbar bg-base-100 shadow-sm px-8 fixed top-0 ">
         <div className="flex-1">
-          <a className="text-4xl font-bold">correctQ</a>
+          <a className="text-4xl font-bold" href="/">correctQ</a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 gap-4 items-center">
             <li>
-              <a>Profile</a>
+              <a href="#">Profile</a>
             </li>
             <li>
-              <a>History</a>
+              <a href="/history">History</a>
             </li>
             <div className="dropdown">
               <div tabIndex={0} role="button" className="btn m-1">
