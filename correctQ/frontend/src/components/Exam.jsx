@@ -17,7 +17,7 @@ export default function Exam() {
   return (
     <>
 
-    <div className="flex w-full h-screen justify-center items-center mt-10">
+    <div className="flex w-full h-screen justify-center items-center mt-48">
       {data ? (
         <div className="w-full max-w-4xl p-6">
           <h1 className="text-2xl font-bold mb-6">{data.examName}</h1>
@@ -26,7 +26,7 @@ export default function Exam() {
               <h3 className="text-lg font-semibold mb-2">Question {index + 1}: {q.question}</h3>
               <ul className="mb-2">
                 {Object.entries(q.options).map(([key, value]) => (
-                  <li key={key} className={`p-1 ${key === q.answer ? 'bg-green-200' : ''}`}>
+                  <li key={key} className={`p-1 ${key === q.answer ? 'bg-green-600' : ''}`}>
                     {key}: {value}
                   </li>
                 ))}
