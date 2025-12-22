@@ -1,13 +1,13 @@
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm px-8 fixed top-0 ">
+      <div className="navbar bg-base-100 shadow-sm px-8 fixed">
         <div className="flex-1">
           <a className="text-4xl font-bold" href="/">correctQ</a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 gap-4 items-center">
-            <li>
+            <li className="hidden">
               <a href="#">Profile</a>
             </li>
             <li>
