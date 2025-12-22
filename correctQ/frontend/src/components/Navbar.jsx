@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm px-8 fixed">
+      <div className="navbar bg-base-100 shadow-sm px-8 fixed z-20">
         <div className="flex-1">
           <a className="text-4xl font-bold" href="/">correctQ</a>
         </div>
@@ -37,15 +37,6 @@ export default function Navbar() {
                     className="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
                     aria-label="Default"
                     value="default"
-                  />
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    name="theme-dropdown"
-                    className="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
-                    aria-label="Retro"
-                    value="retro"
                   />
                 </li>
                 <li>
