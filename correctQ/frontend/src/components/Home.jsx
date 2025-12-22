@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="w-screen h-screen flex flex-col justify-center items-center">
@@ -14,7 +16,9 @@ export default function Home() {
               Upload File
               <input type="file" className="hidden" />
             </label>
-            <button className="btn btn-wide">Submit</button>
+            <button className="btn btn-wide" onClick={() => navigate("/Exam")}>
+              Submit
+            </button>
           </div>
         </div>
       </div>
