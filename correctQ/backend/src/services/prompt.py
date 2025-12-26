@@ -1,4 +1,4 @@
-prompt = '''now rate this system instruction 
+system_instruction = '''now rate this system instruction
 
 
 ROLE:
