@@ -1,9 +1,17 @@
+import cqStore from "../store/cqStore.js";
+import { useEffect } from "react";
 export default function Navbar() {
+  const { theme, loadTheme, setTheme } = cqStore();
+  useEffect(() => {
+    loadTheme();
+  }, []);
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm px-8 fixed z-20">
+      <div className="navbar bg-base-100 shadow-sm px-8 fixed z-50">
         <div className="flex-1">
-          <a className="text-4xl font-bold" href="/">correctQ</a>
+          <a className="text-4xl font-bold" href="/">
+            correctQ
+          </a>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 gap-4 items-center">
@@ -37,6 +45,8 @@ export default function Navbar() {
                     className="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
                     aria-label="Default"
                     value="default"
+                    checked={theme === "default"}
+                    onChange={(e) => setTheme(e.target.value)}
                   />
                 </li>
                 <li>
@@ -46,6 +56,8 @@ export default function Navbar() {
                     className="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
                     aria-label="Forest"
                     value="forest"
+                    checked={theme === "forest"}
+                    onChange={(e) => setTheme(e.target.value)}
                   />
                 </li>
                 <li>
@@ -55,6 +67,8 @@ export default function Navbar() {
                     className="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
                     aria-label="Valentine"
                     value="valentine"
+                    checked={theme === "valentine"}
+                    onChange={(e) => setTheme(e.target.value)}
                   />
                 </li>
                 <li>
@@ -64,6 +78,8 @@ export default function Navbar() {
                     className="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start"
                     aria-label="Aqua"
                     value="aqua"
+                    checked={theme === "aqua"}
+                    onChange={(e) => setTheme(e.target.value)}
                   />
                 </li>
               </ul>

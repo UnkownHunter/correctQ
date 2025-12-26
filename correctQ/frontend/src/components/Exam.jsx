@@ -11,13 +11,13 @@ export default function Exam() {
   const handleSelect = (questionId, optionKey, correctAnswer) => {
     if (selectedOptions[questionId]) return;
 
-    setSelectedOptions(prev => ({
+    setSelectedOptions((prev) => ({
       ...prev,
       [questionId]: optionKey,
     }));
 
     if (optionKey === correctAnswer) {
-      setScore(prev => prev + 1);
+      setScore((prev) => prev + 1);
     }
   };
 
@@ -32,10 +32,8 @@ export default function Exam() {
   return (
     <>
       {/* FIXED HEADER */}
-      <div className="fixed top-20 left-0 w-full  bg-white z-50  px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">
-          {data?.examName || "Loading..."}
-        </h1>
+      <div className="fixed top-20 left-0 w-full  bg-white z-40  px-6 py-4 flex justify-around items-center">
+        <h1 className="text-2xl font-bold">{data?.examName || "Loading..."}</h1>
         <div className="text-2xl font-bold">Score: {score}</div>
       </div>
 
