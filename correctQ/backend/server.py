@@ -1,11 +1,20 @@
-import sys
-import os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from src.app import app
 import uvicorn
+from fastapi.middleware.cors import CORSMiddleware
+
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 if __name__ == "__main__":
 
 
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run("src.app:app", host="0.0.0.0", port=8000, reload= True)
