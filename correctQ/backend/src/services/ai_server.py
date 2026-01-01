@@ -1,6 +1,5 @@
 from google import genai
 from google.genai import types
-import pathlib
 from src.models.exam_model import ExamsData
 from src.services.prompt import system_instruction
 
@@ -11,11 +10,9 @@ GEMINI_API_KEY = 'AIzaSyAOU24KSwvY0Aqr2ebFL9SuTkNT6iBxmRU'
 def generator(file):
     if not file:
         raise ValueError("No files provided")
-     # Assume one file for now
     client = genai.Client(api_key=GEMINI_API_KEY)
 
-    filepath = pathlib.Path(file)
-    data = filepath.read_bytes()
+    data = file.file.read()
     mime_type = file.content_type or 'application/pdf'
 
     response = client.models.generate_content(

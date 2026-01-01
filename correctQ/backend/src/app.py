@@ -14,7 +14,7 @@ async def main():
     content = """
 <body>
 <form action="/uploadfiles/" enctype="multipart/form-data" method="post">
-<input name="files" type="file" multiple>
+<input name="file" type="file">
 <input type="submit">
 </form>
 </body>
