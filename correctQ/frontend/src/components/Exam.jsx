@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getExamById } from "../utils";
+import { getExamById, useApi } from "../utils";
 
 export default function Exam() {
   const { examId } = useParams();
   const [data, setData] = useState(null);
   const [selectedOptions, setSelectedOptions] = useState({});
   const [score, setScore] = useState(0);
+  const {makeRequest} = useApi();
 
   const handleSelect = (questionId, optionKey, correctAnswer) => {
     if (selectedOptions[questionId]) return;
@@ -23,7 +24,7 @@ export default function Exam() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const examData = await getExamById(examId);
+      const examData = await makeRequest(`exam/${examId}`);
       setData(examData);
     };
     fetchData();

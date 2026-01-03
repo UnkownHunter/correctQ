@@ -4,7 +4,9 @@ import { useNavigate } from "react-router-dom";
 export default function Home() {
   const navigate = useNavigate();
   const [file, setFile] = useState(null);
-  const [fileUrl, setFileUrl] = useState(""); 
+  const [fileUrl, setFileUrl] = useState("");
+
+   
 
   const handleUpload = async () => {
     if (!file) return;
@@ -24,7 +26,7 @@ export default function Home() {
     setFileUrl(data.fileUrl); // store URL here
 
     setTimeout(() => {
-      navigate("/Exam");
+      navigate("/Exam",{data});
     }, 2000);
   };
 
