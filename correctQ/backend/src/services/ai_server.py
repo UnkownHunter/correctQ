@@ -2,10 +2,10 @@ from google import genai
 from google.genai import types
 from src.models.exam_model import ExamsData
 from src.services.prompt import system_instruction
+from dotenv import load_dotenv
+load_dotenv()
 
 
-
-GEMINI_API_KEY = 'AIzaSyAOU24KSwvY0Aqr2ebFL9SuTkNT6iBxmRU'
 
 def generator(file):
     if not file:
