@@ -4,3 +4,7 @@ sqlalchemy>=2.0.41
 svix>=1.65.0
 uvicorn>=0.34.2
 google-genai
+supabase
+pymongo
+python-dotenv
+python-multipart

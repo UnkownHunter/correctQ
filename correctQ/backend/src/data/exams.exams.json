@@ -1,0 +1,152 @@
+[{
+  "_id": "exam_001",
+  "questions": [
+    {
+      "question_id": 1,
+      "question": "Which of the following is a void agreement?",
+      "options": {
+        "A": "Agreement with minor",
+        "B": "Agreement by mistake",
+        "C": "Agreement by coercion",
+        "D": "Agreement by fraud"
+      },
+      "correct_ans": "A"
+    },
+    {
+      "question_id": 2,
+      "question": "Consideration is essential for a valid contract except in case of:",
+      "options": {
+        "A": "Agreement by mistake",
+        "B": "Past voluntary service",
+        "C": "Agreement by fraud",
+        "D": "Illegal agreement"
+      },
+      "correct_ans": "B"
+    },
+    {
+      "question_id": 3,
+      "question": "Which agreement is enforceable by law?",
+      "options": {
+        "A": "Void agreement",
+        "B": "Voidable agreement",
+        "C": "Illegal agreement",
+        "D": "Uncertain agreement"
+      },
+      "correct_ans": "B"
+    }
+  ]
+},
+{
+  "_id": "exam_002",
+  "questions": [
+    {
+      "question_id": 1,
+      "question": "Which accounting concept assumes that business and owner are separate entities?",
+      "options": {
+        "A": "Going Concern",
+        "B": "Business Entity",
+        "C": "Money Measurement",
+        "D": "Dual Aspect"
+      },
+      "correct_ans": "B"
+    },
+    {
+      "question_id": 2,
+      "question": "Depreciation is charged to:",
+      "options": {
+        "A": "Increase asset value",
+        "B": "Reduce capital",
+        "C": "Allocate cost of asset",
+        "D": "Create reserve"
+      },
+      "correct_ans": "C"
+    },
+    {
+      "question_id": 3,
+      "question": "Which financial statement shows financial position?",
+      "options": {
+        "A": "Trading Account",
+        "B": "Profit and Loss Account",
+        "C": "Balance Sheet",
+        "D": "Cash Book"
+      },
+      "correct_ans": "C"
+    }
+  ]
+},
+{
+  "_id": "exam_003",
+  "questions": [
+    {
+      "question_id": 1,
+      "question": "Income tax in India is charged for a period known as:",
+      "options": {
+        "A": "Assessment Year",
+        "B": "Financial Year",
+        "C": "Previous Year",
+        "D": "Calendar Year"
+      },
+      "correct_ans": "A"
+    },
+    {
+      "question_id": 2,
+      "question": "Standard deduction under salary income is:",
+      "options": {
+        "A": "₹25,000",
+        "B": "₹40,000",
+        "C": "₹50,000",
+        "D": "₹60,000"
+      },
+      "correct_ans": "C"
+    },
+    {
+      "question_id": 3,
+      "question": "Which head of income includes rental income?",
+      "options": {
+        "A": "Salary",
+        "B": "Business Income",
+        "C": "Income from House Property",
+        "D": "Other Sources"
+      },
+      "correct_ans": "C"
+    }
+  ]
+},
+{
+  "_id": "exam_004",
+  "questions": [
+    {
+      "question_id": 1,
+      "question": "Which cost remains constant irrespective of output?",
+      "options": {
+        "A": "Variable Cost",
+        "B": "Semi-variable Cost",
+        "C": "Fixed Cost",
+        "D": "Marginal Cost"
+      },
+      "correct_ans": "C"
+    },
+    {
+      "question_id": 2,
+      "question": "Prime cost includes:",
+      "options": {
+        "A": "Direct material + Direct labor",
+        "B": "Direct material + Overheads",
+        "C": "Labor + Overheads",
+        "D": "Material + Selling expenses"
+      },
+      "correct_ans": "A"
+    },
+    {
+      "question_id": 3,
+      "question": "Which costing method is suitable for customized products?",
+      "options": {
+        "A": "Process Costing",
+        "B": "Job Costing",
+        "C": "Batch Costing",
+        "D": "Operating Costing"
+      },
+      "correct_ans": "B"
+    }
+  ]
+}]
