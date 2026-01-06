@@ -10,7 +10,7 @@ load_dotenv()
 def generator(file):
     if not file:
         raise ValueError("No files provided")
-    client = genai.Client(api_key=GEMINI_API_KEY)
+    client = genai.Client(api_key="AIzaSyDAJVTtHzRNaZXdlsSu9ZtVMly5kWOTxVM")
 
     data = file.file.read()
     mime_type = file.content_type or 'application/pdf'
