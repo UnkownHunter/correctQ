@@ -11,10 +11,4 @@ supabase: Client = create_client(url, key)
 
 
 
-response = supabase.functions.invoke(
-    "hello-world",
-    invoke_options={"body": {"name": "Functions"}}
-)
-
-print(response)
 

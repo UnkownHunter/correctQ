@@ -1,6 +1,5 @@
 import asyncio
-from pymongo import AsyncMongoClient
-from pymongo import ReturnDocument
+from pymongo import AsyncMongoClient, ReturnDocument
 
 
 client = AsyncMongoClient("mongodb://localhost:27017")
