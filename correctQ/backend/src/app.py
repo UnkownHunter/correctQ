@@ -5,30 +5,16 @@ from google.genai import types
 from typing import Annotated
 from fastapi.responses import HTMLResponse
 from src.services.ai_server import generator
-
 from src.crud.exams import pull_exam_by_id
 
 
 
 
 app = FastAPI()
-@app.get("/")
-async def main():
-    content = """
-<body>
-<form action="/uploadfiles/" enctype="multipart/form-data" method="post">
-<input name="file" type="file">
-<input type="submit">
-</form>
-</body>
-    """
-    return HTMLResponse(content=content)
-
 
 @app.get("/check")
 async def check():
     return {"connection":"successfully"}
-
 
 @app.get("/exam/{exam_id}")
 async def examQuestionsandAnswers(exam_id):
