@@ -16,7 +16,6 @@ export default function Home() {
     });
 
     const data = await res.json();
-    console.log(data);
     navigate(`/mainexam/${1}`, { state: data.response.exams });
   };
 

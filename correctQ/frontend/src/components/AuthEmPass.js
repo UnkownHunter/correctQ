@@ -16,5 +16,4 @@ let { data, error } = await supabase.auth.signInWithPassword({
 
 const { data: { user } } = await supabase.auth.getUser()
 
-
 console.log(user);
